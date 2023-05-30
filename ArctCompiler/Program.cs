@@ -152,7 +152,7 @@ namespace ArctCompiler
                 
                 Console.WriteLine("---------------------------------");
                 Console.WriteLine("ArctCompiler - Time taken: " + watch.ElapsedMilliseconds + " ms");
-                //Console.WriteLine("C Language - Time taken: " + watchC.ElapsedMilliseconds + " ms");
+                Console.WriteLine("C Language - Time taken: " + watchC.ElapsedMilliseconds + " ms");
             }
         }
 

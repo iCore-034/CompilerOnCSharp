@@ -4,17 +4,9 @@
     <projectFile>ArctCompiler/ArctCompiler.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f1cddcf-aa86-44a9-9e3a-4c9feae5f4e0" name="Changes" comment="">
+    <list default="true" id="8f1cddcf-aa86-44a9-9e3a-4c9feae5f4e0" name="Changes" comment="Comment">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CourseCompiler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CourseCompiler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/OverrideListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/OverrideListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/bin/Debug/net7.0/ArctCompiler.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/bin/Debug/net7.0/ArctCompiler.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/bin/Debug/net7.0/ArctCompiler.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/bin/Debug/net7.0/ArctCompiler.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArctCompiler/bin/Debug/net7.0/test.o" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/bin/Debug/net7.0/test.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/obj/Debug/net7.0/ArctCompiler.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ArctCompiler/paste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ArctCompiler/paste.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +79,7 @@
       <workItem from="1685474736946" duration="185000" />
       <workItem from="1685475109083" duration="646000" />
       <workItem from="1685486670547" duration="1466000" />
-      <workItem from="1685488175521" duration="1640000" />
+      <workItem from="1685488175521" duration="2609000" />
     </task>
     <task id="LOCAL-00001" summary="Commit for College">
       <created>1685475182841</created>
@@ -96,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685475182841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Comment">
+      <created>1685489995747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685489995747</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Commit for College" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit for College" />
+    <MESSAGE value="Comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment" />
   </component>
 </project>

@@ -1,7 +1,10 @@
-﻿int main() {
-    double a = 5.7;
-    int b = <<int>>(a);
-    print(b);
+﻿int fib(int a){
+    if(a < 2){ return 1;}
+    return fib(a-1)+fib(a-2);
+}
+int main() {
+    int x = fib(40);
+    print(x);
     return 0;
 }
 
