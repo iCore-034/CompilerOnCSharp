@@ -19,7 +19,7 @@ namespace ArctCompiler
                 LLVM.InitializeX86AsmParser();
                 LLVM.InitializeX86AsmPrinter();
 
-                String input = File.ReadAllText(@"C:\Users\Romanticore\source\repos\CourseCompiler\csharp_compiler\ArctCompiler\paste.txt");
+                String input = File.ReadAllText(@"C:\Users\Romanticore\source\repos\Compiler\CompilerOnCSharp\ArctCompiler\paste.txt");
                 ICharStream stream = CharStreams.fromString(input);
                 ITokenSource lexer = new arctLexer(stream);
                 ITokenStream tokens = new CommonTokenStream(lexer);
@@ -106,19 +106,16 @@ namespace ArctCompiler
                             LLVMCodeGenFileType.LLVMObjectFile, out error);
                     }
                 }
-                // LLVM.DisposePassManager(passManager);
                 Process process = new Process();
                 process.StartInfo.FileName = "cmd.exe";
                 process.StartInfo.Arguments = "/c " + "clang test.o -o hello.exe ";
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.CreateNoWindow = true;
-                // Start the process and read the output
                 process.Start();
                 string output = process.StandardOutput.ReadToEnd();
                 
                 
-                // Write the output to the console
                 process.StartInfo.FileName = "cmd.exe";
                 process.StartInfo.Arguments = "/c " + "hello";
                 // Start timing
@@ -134,25 +131,25 @@ namespace ArctCompiler
                 Console.WriteLine(output);
                 Console.WriteLine("-----------------C language----------------");
                 
-                // Stopwatch watchC = new Stopwatch();
-                // // Start timing
-                //
-                // watchC.Start();
-                // process.StartInfo.FileName = "cmd.exe";
-                // process.StartInfo.Arguments = "/c " + "clang test_c.c -o test_c.exe ";
-                // process.Start();
-                // process.WaitForExit();
-                //
-                // process.StartInfo.FileName = "cmd.exe";
-                // process.StartInfo.Arguments = "/c " + "test_c";
-                //
-                // process.Start();
-                // output = process.StandardOutput.ReadToEnd();
-                // Console.WriteLine(output);
-                // process.WaitForExit();
-                // watchC.Stop();
-                //
-                //
+                Stopwatch watchC = new Stopwatch();
+                // Start timing
+                
+                watchC.Start();
+                process.StartInfo.FileName = "cmd.exe";
+                process.StartInfo.Arguments = "/c " + "clang test_c.c -o test_c.exe ";
+                process.Start();
+                process.WaitForExit();
+                
+                process.StartInfo.FileName = "cmd.exe";
+                process.StartInfo.Arguments = "/c " + "test_c";
+                
+                process.Start();
+                output = process.StandardOutput.ReadToEnd();
+                Console.WriteLine(output);
+                process.WaitForExit();
+                watchC.Stop();
+                
+                
                 Console.WriteLine("---------------------------------");
                 Console.WriteLine("ArctCompiler - Time taken: " + watch.ElapsedMilliseconds + " ms");
                 //Console.WriteLine("C Language - Time taken: " + watchC.ElapsedMilliseconds + " ms");

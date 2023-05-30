@@ -1,28 +1,7 @@
-﻿int test(int n){
-   if(n < 2) {
-      return 1;
-   }
-    return test(n-1) + test(n-2);
-}
-int main() {
-    int x = test(40);
-    print(x);
+﻿int main() {
+    double a = 5.7;
+    int b = <<int>>(a);
+    print(b);
     return 0;
 }
-
-//int test(int a,int b){
-//    int c = b;
-//    int bk = <<int>>(1*5);
-//    return bk;
-//}
-//int main() {
-//    int a = 4;
-//    
-//    while (a < 10){
-//        a = a + 1;
-//        print(a);
-//    }   
-//    return 0;  
-//}
-
 

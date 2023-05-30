@@ -526,7 +526,13 @@ public class ExpressionListener : arctBaseListener
             result = LLVM.ConstInt(LLVM.Int32Type(), (ulong)int.Parse(i.GetText()), false);
         }
         else if (context.DECIMAL() is { } d)
-            result = LLVM.ConstReal(LLVM.DoubleType(), double.Parse(d.GetText()));
+        {
+            string str = d.GetText();
+            str = str.Replace('.', ',');
+            double dd = Convert.ToDouble(str);
+            result = LLVM.ConstReal(LLVM.DoubleType(), dd);
+            
+        }
         else if (context.ID() is { } id)
         {
             var pointer = Ast.GetVariable(context.GetText());
